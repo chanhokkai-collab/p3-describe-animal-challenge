@@ -26,6 +26,11 @@ dialog{border:1px solid var(--line);padding:0;color:var(--ink);background:#fcfcf
 @media(max-height:650px) and (orientation:landscape){.pause svg.illustration{width:min(220px,29vh)}.pause h2{font-size:clamp(30px,5.7vw,53px)}.pause h2 br{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 @media print{.header,.footer,.certificate-controls,.demo-bar{display:none!important}.certificate .surface{break-inside:avoid}.wrap{width:100%}body{background:#fff}}
+.difficulty-picker{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px;margin:12px 0 15px;border:1px solid var(--line);border-radius:14px;background:#fff}.difficulty-picker strong{font-size:17px}.difficulty-buttons{display:flex;flex-wrap:wrap;gap:8px}.difficulty-buttons .button{min-height:44px}.difficulty-buttons [aria-pressed="true"]{background:var(--green);color:white;border-color:var(--green)}.difficulty-picker p{flex-basis:100%;font-size:14px;color:var(--muted);margin:0}
+.questions h3{font-size:clamp(22px,2.55vw,30px);line-height:1.4}.question-link{margin:7px 0 2px;color:var(--accent);font-size:16px;font-weight:800}.questions .option{font-size:clamp(20px,2.3vw,26px);line-height:1.4;min-height:62px}.option .choice-text{min-width:0;overflow-wrap:anywhere}.sentence{font-size:clamp(21px,2.5vw,29px);line-height:1.5;gap:6px}.sentence .placeholder{font-size:16px}.sentence .fragment{overflow-wrap:anywhere}.option .choice-picture{flex:none;width:clamp(52px,7vw,80px);height:auto;background:#eef6f0;border-radius:9px}.option.covered svg{flex:none}
+.hunt-shell{overflow:hidden;border-radius:22px;background:#153d40;color:#f8f4db;box-shadow:0 14px 35px #163c3f24}.hunt-head,.hunt-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;padding:15px clamp(15px,3vw,28px)}.hunt-head h1{color:inherit;margin:2px 0 0}.hunt-head .eyebrow,.hunt-footer{color:#cbe2d1}.hunt-count{background:#284f4f;border:1px solid #9eb9a96b;border-radius:99px;color:#fff3bc;padding:6px 14px;font-weight:800;white-space:nowrap}.hunt-board{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));min-height:clamp(305px,43vw,445px);overflow:hidden;isolation:isolate;touch-action:none;user-select:none;background:#65988c;cursor:crosshair}.hunt-zone{position:relative;min-width:0}.hunt-zone+.hunt-zone{border-inline-start:1px dashed #e8efd48c}.habitat-art{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.habitat-caption{position:absolute;left:50%;bottom:9px;translate:-50% 0;max-width:96%;white-space:nowrap;padding:4px 8px;border-radius:6px;background:#153638e8;color:#f7f4dd;font-size:clamp(11px,1.6vw,14px);font-weight:750;pointer-events:none}.hunt-target{position:absolute;left:var(--spot-x);top:var(--spot-y);translate:-50% -50%;display:grid;place-items:center;width:clamp(64px,14vw,156px);height:clamp(64px,15vw,148px);max-width:96%;border:1px solid transparent;border-radius:20px;background:transparent;color:#fbf3c7;padding:0;cursor:crosshair;-webkit-tap-highlight-color:transparent}.hunt-target:not(:disabled):is(:hover,:focus-visible){border-color:#fff6b4;background:#f5f1bd24;outline:2px solid #173c3c;outline-offset:2px}.hunt-target svg{width:100%;height:auto;max-height:100%;pointer-events:none}.hunt-target .silhouette{filter:brightness(0);opacity:.72}.hunt-target[data-state="locked"] .silhouette{opacity:.40}.hunt-target[data-state="done"] .silhouette{opacity:.91;filter:none}.hunt-mark{position:absolute;min-width:23px;min-height:23px;right:0;bottom:0;display:grid;place-items:center;padding:3px;border-radius:30px;background:#163f40;color:#fff3c3}.hunt-mark svg{width:14px;height:14px}.hunt-crosshair{position:absolute;inset:0 auto auto 0;z-index:2;width:60px;height:60px;transform:translate3d(var(--aim-x),var(--aim-y),0) translate(-50%,-50%);pointer-events:none;opacity:0;filter:drop-shadow(0 1px 2px #173635);transition:opacity .13s}.hunt-board[data-aiming] .hunt-crosshair{opacity:1}.hunt-footer p{margin:0}.hunt-footer strong{color:#fff3bc}.hunt-footer .button{min-height:44px}
+.review-title{margin-bottom:12px}.review-intro{color:var(--muted);font-size:17px;margin:4px 0 17px}.review-sheet{padding:clamp(10px,2.5vw,22px);margin-bottom:14px}.review-table{width:100%;border-collapse:collapse;table-layout:fixed}.review-table caption{text-align:left;padding:0 0 10px;color:var(--ink);font-size:21px;font-weight:850}.review-table col:first-child{width:18%}.review-table th,.review-table td{border-bottom:1px solid var(--line);text-align:left;vertical-align:top;padding:10px 8px;overflow-wrap:anywhere}.review-table thead{background:var(--soft);color:var(--accent)}.review-table tbody th{font-size:clamp(15px,2vw,20px)}.review-table tbody td{font-size:clamp(17px,2.15vw,24px);line-height:1.6}.review-table tr:last-child>*{border-bottom:0}.review-table .review-route{padding:10px 8px 13px}.review-route .writing-route{margin-top:4px}.review-status{margin:0;color:var(--muted)}@media(max-width:520px){.hunt-head,.hunt-footer{gap:6px;padding:11px 12px}.hunt-head h1{font-size:26px}.review-table col:first-child{width:23%}.review-table th,.review-table td{padding-inline:5px}}
+.review-steps{list-style:none;display:grid;gap:6px;padding:0;margin:0}.review-step{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:baseline;gap:4px 12px;padding:7px 9px;border-inline-start:3px solid var(--review-line);border-radius:8px;background:var(--review-fill);color:#183239}.review-step:nth-child(1){--review-fill:#deefdf;--review-line:#4a8762}.review-step:nth-child(2){--review-fill:#faebbe;--review-line:#997721}.review-step:nth-child(3){--review-fill:#f3dbe4;--review-line:#a35976}.review-step-label{display:flex;align-items:center;gap:5px;font-size:15px;font-weight:850;white-space:nowrap}.review-step-label b{display:inline-grid;place-items:center;min-width:1.7em;min-height:1.7em;border-radius:50%;background:#ffffffa3;font-variant-numeric:tabular-nums}.review-step-text{min-width:0}@media(max-width:580px){.review-step{grid-template-columns:1fr;gap:3px;padding:5px 8px}.review-step-label{font-size:14px}}
 </style>
 <style>
 :root{--serif:"Noto Serif TC","Songti TC","PMingLiU","Field Noto Serif","Field Noto Sans",serif;--sans:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Field Noto Sans",system-ui,sans-serif}
@@ -69,34 +74,34 @@ const rawAnimals = [
   ['孔雀','疏林與草地','c/c5/Peacock_Plumage.jpg','🦚','張開的尾羽','藍綠色的尾羽向四周展開，排成半圓','一把打開的大彩扇','🪭','peacock',49,42],
   ['松鼠','針葉林與闊葉林','1/1c/Squirrel_posing.jpg','🐿️','背後的尾巴','尾巴蓬鬆厚實，往背後彎起','一把毛茸茸的撣子','🧹','squirrel',24,33],
   ['長頸鹿','非洲疏林與草原','9/9e/Giraffe_Mikumi_National_Park.jpg','🦒','向上伸的脖子','脖子又細又長，上面布滿褐色斑塊','一根披着花布的長柱子','🗼','giraffe',38,32],
-  ['大象','非洲草原與疏林','9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg','🐘','向下垂的鼻子','鼻子又長又粗，末端能彎起來','一根能彎曲的粗水管','🚿','elephant',19,62],
+  ['大象','非洲草原與疏林','9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg','🐘','向下垂的鼻子','鼻子又長又粗，末端能彎起','一根能彎曲的粗水管','🚿','elephant',19,62],
   ['斑馬','非洲草原','4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg','🦓','身上的條紋','黑白條紋一道接一道，沿着背部往下伸','一件黑白相間的條紋衣','👕','zebra',51,48],
-  ['大熊貓','山地竹林','0/0f/Grosser_Panda.JPG','🐼','眼睛周圍的黑毛','黑毛圍在兩眼周圍，形成兩個深色圈','一副圓圓的黑眼鏡','🕶️','panda',54,38],
+  ['大熊貓','山地竹林','0/0f/Grosser_Panda.JPG','🐼','眼睛周圍的黑毛','黑毛圍在兩眼周圍，形成兩個深色圈','一副黑眼鏡','🕶️','panda',54,38],
   ['雄獅','非洲草原與灌叢','a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg','🦁','頭頸的鬃毛','金棕色鬃毛又厚又密，圍着臉垂下來','一條厚厚的毛圍巾','🧣','lion',29,46],
-  ['蝸牛','林地落葉層','2/23/Snail1web.jpg','🐌','背上的殼','棕色硬殼圓圓的，花紋一圈圈往外轉','一個盤起來的旋紋小屋','🏠','snail',65,64],
+  ['蝸牛','林地落葉層','2/23/Snail1web.jpg','🐌','背上的殼','棕色硬殼圓圓的，花紋一圈圈往外轉','一間有旋紋的小屋','🏠','snail',65,64],
   ['無尾熊','澳洲桉樹林','4/49/Koala_climbing_tree.jpg','🐨','頭上的耳朵','兩隻灰耳朵圓圓的，邊緣長滿細毛','兩團毛茸茸的小絨球','🧶','koala',48,21],
   ['蝴蝶','花草地與林緣','7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg','🦋','展開的翅膀','橙色翅膀分成一小塊一小塊，四周有黑邊','兩片鑲着黑框的彩色玻璃','🪟','butterfly',47,47],
-  ['貓頭鷹','林地與山坡','1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg','🦉','圓眼','兩隻橙黃的圓眼亮亮的','兩盞小燈','💡','owl','牠轉頭細看，認真地巡邏','「咕、咕」的低鳴傳來，牠瞪圓雙眼，十分警覺','叫'],
-  ['變色龍','馬達加斯加疏林','b/bd/Panther_chameleon_furcifer_pardalis_female.jpg','🦎','尾巴','尾巴從末端捲成一圈','一卷盤起的繩子','🧵','chameleon','牠小心跨步，專心地勘察前面的樹枝','葉子沙沙作響，牠轉動眼睛，專注地打量四周','動'],
-  ['企鵝','南極冰原','a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg','🐧','背和肚皮','背部黑黑的，肚皮白白的','一件黑白禮服','🎩','penguin','牠挺着肚子，一步一步神氣地巡場','冰上傳來「啪嗒、啪嗒」的腳步聲，牠抬起頭，一臉神氣','走'],
-  ['啄木鳥','林地與山林','d/df/Great_spotted_woodpecker_%28Dendrocopos_major%29_male_Drenthe.jpg','🐦','尖嘴','長而尖的嘴又直又硬','一把小鑿子','🔨','woodpecker','牠緊貼樹幹，當起了敲敲打打的小木匠','樹幹傳來「篤、篤」聲，牠側着頭，十分專注','啄'],
-  ['金剛鸚鵡','中南美洲熱帶森林','4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg','🦜','翅羽','翅上排着鮮紅、金黃和亮藍的羽毛','一把彩帶','🎀','macaw','牠歪頭向同伴打招呼，還熱情地揚了揚翅膀','「嘎！」一聲響起，牠把頭高高揚起，精神十足','叫'],
-  ['赤狐','林地與草原','d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg','🦊','耳朵','兩隻尖耳豎起來，輪廓是三角形','兩面小三角旗','🚩','fox','牠踮着腳巡視草叢，不肯放過任何線索','草葉沙沙響，牠豎起耳朵，警覺地望向前方','走'],
-  ['小蜜蜂','花草地與疏林','4/4d/Apis_mellifera_Western_honey_bee.jpg','🐝','腹部','圓鼓鼓的腹部橫着一圈圈深淺條紋','一件條紋小背心','👕','bee','牠挨朵拜訪花兒，忙着把花粉裝進小小的行李','「嗡嗡」聲停在花邊，牠埋頭鑽進花心，忙得很','飛'],
-  ['樹懶','中南美洲熱帶森林','1/18/Bradypus.jpg','🦥','前爪','前爪彎彎的，尖端能勾住樹枝','幾個小掛鈎','🪝','sloth','牠掛在枝頭，慢吞吞地伸了一個大懶腰','樹葉輕輕擦出沙沙聲，牠半閉着眼，一臉悠閒','動'],
-  ['羊駝','安第斯高原草地（家養）','f/fe/Alpacas.JPG','🦙','捲毛','淺色的捲毛蓬鬆地堆在身上','一團軟綿綿的雲','☁️','alpaca','牠仰起頭，伸長脖子迎接走近的同伴','牠低低地哼了一聲，眼睛睜得圓圓的，一臉好奇','叫'],
-  ['北極熊','北極海冰與苔原','6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg','🐻‍❄️','皮毛','厚厚的毛呈乳白色','一件白色大毛衣','🧥','polar','牠低頭搜查雪地，認真地尋找氣味的線索','腳下的冰雪咯吱作響，牠昂起頭，警惕地張望','走'],
-  ['穿山甲','非洲草原與疏林','6/6b/Manis_temminckii_%2829645803646%29.jpg','🛡️','鱗片','褐色鱗片一層疊一層，覆在背上','一套一片片拼起的盔甲','🛡️','pangolin','牠慌忙把頭藏進盔甲裏，給自己關上了大門','落葉窸窣一響，牠縮起身子，一副小心翼翼的模樣','動'],
-  ['獵豹','非洲草原與疏林','9/92/Male_cheetah_facing_left_in_South_Africa.jpg','🐆','身子細長，四條腿也很長','金黃皮毛上有一點點黑斑','49','49','cheetah','拔腿跑過草地','黑斑像灑在金布上的黑芝麻','牠埋頭衝刺，一心想拿第一'],
-  ['梅花鹿','東亞林地與草坡','f/f6/Cervus_nippon_002.jpg','🦌','身形輕巧、背部平直','褐毛上排着一點點白斑','72','43','deer','昂起頭，輕輕躍過矮草','白斑像綴在褐布上的小雪點','牠猛然抬頭，急着趕赴林間的約會'],
-  ['袋鼠','澳洲乾燥草原','6/6c/Female_Red_Kangaroo_%28Macropus_rufus%29.jpg','🦘','後腿粗壯，長尾巴拖在身後','短毛是灰褐色的','54','49','kangaroo','後腿一蹬，跳過草地','灰褐色的短毛像一塊灰棕色的絨布','牠跳得老遠，得意地向同伴炫耀'],
-  ['雪豹','亞洲高山岩地','a/a5/Irbis4.JPG','🐆','身形低伏、尾巴粗長','灰白毛上布着一圈圈深色斑紋','49','51','snow','踏上岩石，輕巧地往上躍','深色斑紋像印在白布上的小花','牠悄悄越過石頭，小心地巡查山坡'],
-  ['老虎','亞洲林地與草原','b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg','🐅','身子高大，四腳粗壯','橙色的背上有一道道黑紋','50','54','tiger','低下身子，走進草叢','黑紋像畫在橙布上的粗線','牠躡手躡腳，怕吵醒鄰居'],
-  ['駱駝','乾燥沙漠與半沙漠','c/c4/Camelus_dromedarius_in_Nuweiba.jpg','🐪','背上隆起一個駝峰','沙褐色的背毛深淺不一，峰頂的毛較深','61','38','camel','邁開長腿，慢慢跨過沙地','隆起的駝峰像背着一座小沙丘','牠背着大行囊，不緊不慢地領路'],
-  ['鴕鳥','非洲乾燥草原','9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg','🪶','身軀高大、雙腿特別長','深色身羽間露出一片白色翅羽','49','53','ostrich','邁開大步，直往草地另一頭跑','白色的翅羽像從黑大衣露出的白袖子','牠抬頭領跑，急着把同伴甩在後頭'],
-  ['羚羊','非洲乾燥草地','e/e3/174_Male_Springbok_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg','🦌','側身修長、細腿挺直','白腹和淺褐背之間有一道深褐色的橫紋','49','54','antelope','彈起四蹄，躍過低矮的草叢','深褐色橫紋像白衣上一道長腰帶','牠得意地蹦高，給草原上的朋友表演了一跳'],
-  ['蝙蝠','林地樹冠','1/1f/Grey_headed_flying_fox_-_taking_off_-_AndrewMercer_IMG41558.jpg','🦇','身子倒掛在樹枝上','翅膀上有幾條細線','39','51','bat','鬆開爪子，拍打翅膀飛離樹枝','翅膀上的細線像雨傘的傘骨','牠飛過樹梢，開始巡邏'],
-  ['犀牛','非洲草原與灌叢','2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg','🦏','身子又大又壯，頭低低的','肩上的灰皮有一道道摺痕','48','54','rhino','抬起頭，踏着重步向前走','肩上的摺痕像厚大衣上的皺紋','牠挺起胸，神氣地巡視草地']
+  ['貓頭鷹','林地與山坡','1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg','🦉','圓眼','雙眼又圓又亮，泛着橙黃色的光','兩盞小燈','💡','owl','牠不時轉頭，認真地巡邏','「咕、咕」的低鳴傳來，牠雙目圓睜，十分警覺','叫'],
+  ['變色龍','馬達加斯加疏林','b/bd/Panther_chameleon_furcifer_pardalis_female.jpg','🦎','尾巴','尾巴末端彎彎的，捲成一圈','一卷繩子','🧵','chameleon','牠小心踏出一步，勘察前面的樹枝','葉子沙沙作響，牠立刻停步，警覺地打量四周','動'],
+  ['企鵝','南極冰原','a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg','🐧','背和肚皮','背黑黑的，肚皮白白的','一件黑白禮服','🎩','penguin','牠挺起肚子，神氣地走上舞台','腳步啪嗒啪嗒響，牠抬起頭的樣子威風凜凜','走'],
+  ['啄木鳥','林地與山林','d/df/Great_spotted_woodpecker_%28Dendrocopos_major%29_male_Drenthe.jpg','🐦','嘴巴','嘴巴又長又直，末端尖尖的','一把小鑿子','','woodpecker','牠細心地替大樹治病，把藏在樹幹裏的蛀蟲一條條找出來','一陣「篤、篤」的敲擊聲響起，牠側着頭，十分專注','啄'],
+  ['金剛鸚鵡','中南美洲熱帶森林','4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg','🦜','翅羽','翅上排着鮮紅、金黃和亮藍的羽毛','一把彩帶','🎀','macaw','牠歪着頭，揮動翅膀，熱情地向同伴打招呼','接着牠「嘎」地叫了一聲，昂首挺胸，精神十足','叫'],
+  ['赤狐','林地與草原','d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg','🦊','耳朵','兩隻尖耳直直地豎着','兩面小三角旗','🚩','fox','牠踮着腳巡視草叢，不肯放過任何線索','草葉沙沙一響，牠立刻停步，警覺地望向前方','走'],
+  ['小蜜蜂','花草地與疏林','4/4d/Apis_mellifera_Western_honey_bee.jpg','🐝','腹部','腹部圓鼓鼓的，橫着一圈圈深淺條紋','一件小背心','👕','bee','牠逐一拜訪花兒，把花粉裝進小小的行囊','花叢裏傳來「嗡嗡」聲，牠緊貼花心，忙得連頭也不抬','飛'],
+  ['樹懶','中南美洲熱帶森林','1/18/Bradypus.jpg','🦥','爪子','爪子彎彎的，能勾住樹枝','幾個小掛鉤','🪝','sloth','牠掛在樹枝上，慢慢伸了個懶腰','這時，葉子沙沙響，牠半閉着眼，很舒服','動'],
+  ['羊駝','安第斯高原草地（家養）','f/fe/Alpacas.JPG','🦙','捲毛','捲毛蓬鬆，呈淺米色','一團軟綿綿的雲','☁️','alpaca','牠伸長脖子，迎接走近的同伴','牠低低地哼了一聲，眼睛睜得圓圓的，一臉好奇','叫'],
+  ['北極熊','北極海冰與苔原','6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg','🐻‍❄️','皮毛','皮毛厚實，呈乳白色','一件白色大毛衣','🧥','polar','牠把鼻子貼近雪地，仔細搜尋氣味留下的線索','腳下的冰雪咯吱作響，牠猛地抬頭，警惕地張望','走'],
+  ['穿山甲','非洲草原與疏林','6/6b/Manis_temminckii_%2829645803646%29.jpg','🛡️','鱗片','背上覆着層層相疊的褐色鱗片','一套盔甲','🛡️','pangolin','牠把頭藏進盔甲裏，慌忙給自己關上大門','外面傳來落葉的窸窣聲，牠仍緊緊縮着身子，一動也不敢動','動'],
+  ['獵豹','非洲草原與疏林','9/92/Male_cheetah_facing_left_in_South_Africa.jpg','🐆','身形修長，四腿纖細','金黃色的皮毛上散着細小的黑斑','49','49','cheetah','猛地蹬地，衝過草地','灑在金布上的黑芝麻','牠一心想拿第一，連頭也不回'],
+  ['梅花鹿','東亞林地與草坡','f/f6/Cervus_nippon_002.jpg','🦌','身形纖瘦，四腿細長','褐色的皮毛上散着點點白斑','72','43','deer','昂起頭，輕輕躍過矮草','綴在褐布上的小雪點','牠直奔林子深處，急着趕赴一場約會'],
+  ['袋鼠','澳洲乾燥草原','6/6c/Female_Red_Kangaroo_%28Macropus_rufus%29.jpg','🦘','後腿粗壯，長尾巴伸在身後','身上披着一層細密的灰褐色短毛','54','49','kangaroo','後腿一蹬，躍過草地','一塊灰棕色的絨布','落地後，牠得意地望向同伴，等着大家喝采'],
+  ['章魚','沿岸海域與海床','9/9f/Octopus_vulgaris_2.jpg','🐙','身子圓圓的，長腕向四周伸開','長腕底下排着一個個圓吸盤','55','72','octopus','伸長一條腕，緊緊抓住一塊石頭','一排小鈕扣','接着，牠當起搬運工，把石頭移到一旁'],
+  ['老虎','亞洲林地與草原','b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg','🐅','身子高大，四腳粗壯','橙色的背上有一道道黑紋','50','54','tiger','低下身子，鑽進草叢','畫在橙布上的粗線','牠躡手躡腳，生怕吵醒鄰居'],
+  ['駱駝','乾燥沙漠與半沙漠','c/c4/Camelus_dromedarius_in_Nuweiba.jpg','🐪','四條腿細長，背上隆起一個駝峰','駝峰頂端的沙褐色背毛比旁邊的深','61','38','camel','邁開長腿，踏上沙地','一座小沙丘','牠背着大行囊，不緊不慢地為同伴領路'],
+  ['鴕鳥','非洲乾燥草原','9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg','🪶','身軀高大，雙腿特別長','深色的羽毛間露出一片白色翅羽','49','53','ostrich','邁開大步，直奔草地另一頭','從黑大衣裏露出的白袖子','牠一心要拿冠軍，不肯讓同伴追上'],
+  ['海龜','溫暖海域與珊瑚礁','6/6e/Chelonia_mydas_swimming%2C_Hawaii.jpg','🐢','背着一個大圓殼，前肢向兩邊伸開','背殼上的花紋一塊接一塊，每塊都有好幾個角','23','53','turtle','拍動前肢，向前划了一下','拼在一起的小地磚','牠一點也不趕時間，悠閒地在海裏散步'],
+  ['蝙蝠','林地樹冠','1/1f/Grey_headed_flying_fox_-_taking_off_-_AndrewMercer_IMG41558.jpg','🦇','倒掛在樹枝上，翅膀貼着身子','翅膀上有幾條向外伸展的細線','39','51','bat','鬆開爪子，拍打翅膀飛離樹枝','撐開雨傘的傘骨','牠掠過樹梢，開始了夜間巡邏'],
+  ['犀牛','非洲草原與灌叢','2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg','🦏','身子又大又壯，頭低低的','肩上的灰皮有一道道摺痕','48','54','rhino','抬起頭，踏着沉重的步子往前走','厚大衣上的皺紋','牠昂首挺胸，神氣地巡視草地']
 ];
 const commons = 'https://upload.wikimedia.org/wikipedia/commons/';
 const animals = rawAnimals.map(([name, habitat, file, emoji, part, detail, extra, marker, art, ...remaining], index) => {
@@ -175,6 +180,12 @@ function tallAnimal(art) {
 }
 function smallAnimal(art) {
   switch(art) {
+    case 'octopus': return repeats(8,index=>{
+      const endX = 49+index*29;
+      const endY = [129,152,171,157,175,158,143,120][index];
+      return line(`M${118+index*8} 104Q${endX} 170 ${endX} ${endY}`,'#b35d58',13)+repeats(3,dot=>ellipse(endX+(145-endX)*dot*.09,endY+5+dot*4,3,2,'#f6b99b'));
+    })+ellipse(147,95,42,35,'#cd7770')+ellipse(140,82,26,15,'#de8c78')+eye(130,105)+eye(166,104);
+    case 'turtle': return path('M110 100Q75 66 60 81q8 30 54 42m56-17q30 22 12 58-22-6-29-41m-50-5q-17 35-43 26 6-23 28-32m87-17q22-20 41-13l-8 23-29 10','#698960')+ellipse(137,104,58,30,'#476c59')+ellipse(131,98,49,24,'#819653')+line('M87 100l29-9 18 13 23-14 22 5m-63-4-4-13m22 26-3 17m26-31 5-11','#435c43',3)+ellipse(213,91,23,14,'#8ea36e')+eye(221,88)+line('M218 97l12-2','#435c43',2);
     case 'hedgehog': return path('M75 138 64 113 77 114 71 94 87 98 87 77 103 92 111 70 122 86 137 69 144 85 160 73 165 93 183 86 181 105q35 14 39 35z','#71523f')+ellipse(136,124,65,23,'#a27350')+repeats(20,index=>line(`M${78+index%10*11} ${116+Math.floor(index/10)*12}l-5-13`,'#e3b783',2))+path('M158 136q4-35 23-29 12 3 35 23 8 10-5 14h-43z','#e8c398')+ellipse(176,112,7,8,'#b58462')+eye(191,123)+ellipse(218,133,7,5,'#41352b')+ellipse(108,148,13,5,'#7d553e')+ellipse(174,148,13,5,'#976a50');
     case 'squirrel': return path('M145 133q-38 15-54-8Q50 75 89 46q32-10 42 19 6 31-17 40 21 5 31 28z','#9d543a')+path('M98 125Q63 88 83 61q22-23 36 5-19-11-27 9-10 23 20 44z','#d58854')+ellipse(143,122,29,34,'#b26543')+ellipse(151,124,19,24,'#efd1a6')+path('M144 94l-4-30 18 16 13-11 4 29z','#995239')+ellipse(168,94,22,17,'#be704b')+ellipse(183,103,11,6,'#e6bd90')+eye(176,92)+line('M151 114l26 4m-45 30h19','#854934',6)+ellipse(185,116,7,9,'#91613a');
     case 'snail': return path('M65 144q25 0 63-17l43 9 23-25q18-5 24 10 8 17 25 22-2 10-20 10H79q-9 0-14-9z','#cead6b')+ellipse(133,109,41,36,'#ae6a47')+ellipse(128,104,31,27,'#d1975c')+line('M157 118q10-30-19-35-31-3-32 22 0 20 25 19 15-2 13-15-1-8-12-7-8 0-7 8','#6f4d39',4)+line('M199 119l-5-26m15 26 11-25','#9e794f',3)+eye(194,93)+eye(221,94)+line('M207 135q5 5 11 1','#7b563c',2);
@@ -188,12 +199,14 @@ function smallAnimal(art) {
   }
 }
 const artCache = new Map();
+const animalDrawing = art => ['zebra','panda','lion','polar','cheetah','deer','tiger','rhino','fox'].includes(art) ? quadruped(art) : ['peacock','owl','penguin','woodpecker','macaw','ostrich'].includes(art) ? bird(art) : ['giraffe','elephant','camel','alpaca','kangaroo'].includes(art) ? tallAnimal(art) : smallAnimal(art);
 function animalArt(animal) {
   if (artCache.has(animal.art)) return artCache.get(animal.art);
-  const cold = ['penguin','polar','snow'].includes(animal.art);
-  const dry = ['camel','giraffe','zebra','elephant','lion','cheetah','antelope','rhino','ostrich','kangaroo','pangolin'].includes(animal.art);
-  const [sky,horizon,hill,ground,leaf] = cold ? ['#c4dae0','#e4edf0','#aabbc1','#d6e2df','#adbec0'] : dry ? ['#e6cc94','#f5dfa9','#c7a879','#bc9e65','#7e8751'] : ['#a7c4a0','#dce0ac','#819f7d','#779773','#426c56'];
-  const art = ['zebra','panda','lion','polar','cheetah','deer','snow','tiger','antelope','rhino','fox'].includes(animal.art) ? quadruped(animal.art) : ['peacock','owl','penguin','woodpecker','macaw','ostrich'].includes(animal.art) ? bird(animal.art) : ['giraffe','elephant','camel','alpaca','kangaroo'].includes(animal.art) ? tallAnimal(animal.art) : smallAnimal(animal.art);
+  const cold = ['penguin','polar'].includes(animal.art);
+  const dry = ['camel','giraffe','zebra','elephant','lion','cheetah','rhino','ostrich','kangaroo','pangolin'].includes(animal.art);
+  const marine = ['octopus','turtle'].includes(animal.art);
+  const [sky,horizon,hill,ground,leaf] = marine ? ['#93dbe0','#297b99','#509ca4','#71a7a3','#256f69'] : cold ? ['#c4dae0','#e4edf0','#aabbc1','#d6e2df','#adbec0'] : dry ? ['#e6cc94','#f5dfa9','#c7a879','#bc9e65','#7e8751'] : ['#a7c4a0','#dce0ac','#819f7d','#779773','#426c56'];
+  const art = animalDrawing(animal.art);
   const scenery = cold ? path('m0 73 46-41 32 37 24-13 50 50 51-44 39 21 23-47 35 27v87H0z',hill) : path('M0 90Q63 45 133 87q46 24 95-13 38-17 72-4v75H0z',hill)+ellipse(dry ? 232 : 34,49,19,19,'#f9e8b7');
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="${sky}"/><stop offset="1" stop-color="${horizon}"/></linearGradient></defs><path d="M0 0h300v200H0z" fill="url(#sky)"/>${scenery}${path('M0 124q38-10 89 2 63 16 120-8 46-19 91 0v82H0z',ground)}${ellipse(152,171,98,12,'#253e3029')}${art}${repeats(9,index=>{const x=index*37%299,y=181+index%4*5;return line(`M${x} ${y}q3-10 8-11m-8 11-3-9m3 9 12-5`,leaf,1.7);})}</svg>`;
   const data = `data:image/svg+xml,${encodeURIComponent(svg)}`;
@@ -219,38 +232,172 @@ const shuffle = values => {
   }
   return mixed;
 };
-const choice = (text,emoji,reason='') => ({text,emoji,reason});
+const choice = (text,picture='',reason='',fragment=text) => ({text,picture,reason,fragment});
 const task = (prompt,hint,right,...wrong) => ({prompt,hint,options:shuffle([right,...wrong]),revealed:new Set()});
-function questionsFor(animal, mode) {
-  const {name,part,detail,extra,marker,emoji,remaining,stage} = animal;
+const objectNames = {ball:'一團小絨球',hooks:'幾個彎掛鉤',fan:'一把打開的彩扇',rope:'一卷繩子',pipe:'一根粗水管',ribbon:'一把彩帶',glass:'一片彩色玻璃',cloud:'一團白雲',armor:'一套盔甲',flag:'兩面小三角旗',scarf:'一條厚圍巾',column:'一根長柱子',lamp:'兩盞小燈',hammer:'一把平頭錘子',paper:'一張白紙'};
+const pictureInk = '#284952';
+const pictureShape = (geometry,color) => path(geometry,color,pictureInk,1.7);
+const brushPicture = (bristles) => pictureShape('M25 27L66 12l4 7-38 17z','#b9815c')+pictureShape(bristles,'#d9a558')+line('M17 39l-6 8m13-7-3 10m10-10 3 9',pictureInk,1.4);
+const objectPictures = {
+  chisel:()=>pictureShape('M9 42l38-21 6 9z','#b1cbd0')+pictureShape('M43 21l19-12q5-2 10 6t0 10L51 33z','#bb7448')+line('M16 39l29-16','#f5ffff',1.4),
+  hammer:()=>pictureShape('M23 49l24-32 6 5-23 32z','#b9815c')+pictureShape('M37 14l9-9 25 17-8 12z','#95b5bc'),
+  brush:()=>brushPicture('M11 29l22-6 10 16-30 7z'),duster:()=>brushPicture('M8 28q9-14 24-6 11-7 15 7 2 14-14 13-8 12-17 3-12 2-8-17z'),
+  fan:()=>pictureShape('M39 49L9 24Q40-7 71 24Z','#eea56d')+line('M39 49L21 17m18 32L39 12m0 37 18-32',pictureInk,1.5),
+  ball:()=>ellipse(40,29,20,20,'#c999bc')+line('M23 26q17-20 33 7m-36 0q16-15 31 11m-12-32q-7 7-6 13','#6d5275',1.5),
+  column:()=>pictureShape('M18 48h44v7H18zM22 6h36v6H22zM26 12h28v36H26z','#ecd29a')+line('M29 22l6-7 5 8-6 6zm14 14 6-11 3 12-4 7z','#9e6547',3),
+  pipe:()=>line('M21 12v17q0 16 15 16h26',pictureInk,15)+line('M21 12v17q0 16 15 16h26','#6bb4ba',11)+ellipse(62,45,4,6,'#25545c'),
+  rope:()=>line('M70 48H54c-38 0-46-18-37-30 11-14 42-10 44 5 3 16-34 21-35 7-1-8 24-12 25-2',pictureInk,8)+line('M70 48H54c-38 0-46-18-37-30 11-14 42-10 44 5 3 16-34 21-35 7-1-8 24-12 25-2','#e5b26f',4),
+  shirt:()=>pictureShape('M30 9 14 13 6 26l12 7 6-6v23h32V27l6 6 12-7-8-13-16-4q-10 13-20 0z','#fff7df')+line('M25 24h30m-30 9h30m-30 9h30',pictureInk,4),
+  suit:()=>pictureShape('M32 7 9 17l5 34h52l5-34L48 7z','#243e4a')+pictureShape('M29 10l11 35 11-35z','#fff8e4')+path('M31 15l9 4 9-4v10l-9-3-9 3z','#c66f65'),
+  glasses:()=>ellipse(24,30,13,13,'#315462')+ellipse(56,30,13,13,'#315462')+line('M37 29q3-6 6 0M11 26l-7-2m65 2 7-2',pictureInk,3),
+  scarf:()=>line('M30 49l6-21q-12-1-12-10t13-8q19 3 18 11t-17 11l16 19',pictureInk,14)+line('M30 49l6-21q-12-1-12-10t13-8q19 3 18 11t-17 11l16 19','#d08d6a',10),
+  spiral:()=>ellipse(39,31,23,21,'#d59c72')+line('M56 36q10-19-13-21-21-1-19 14 0 12 15 11 11-1 10-10-2-8-12-4',pictureInk,2),
+  glass:()=>pictureShape('M12 10h56v36H12z','#e9a34f')+path('M12 10h25L12 31z','#77b9ad')+path('M68 19L35 46h33z','#d18183')+line('M12 32l26-22m-3 36 33-27',pictureInk,2),
+  lamp:()=>[23,57].map(x=>ellipse(x,23,13,12,'#f4c75e')+line(`M${x-5} 35h10m-9 5h8m-6 5h4`,pictureInk,3)).join(''),
+  ribbon:()=>line('M15 43q3-22 26-26t24-9','#f09662',6)+line('M24 49q-3-20 27-18 14 0 18-13','#62a99a',6)+line('M35 49q4-16 22-3 8 5 14-10','#a990b7',6),
+  flag:()=>[14,44].map(x=>line(`M${x} 47V12`,pictureInk,2)+pictureShape(`M${x} 12l22 10-22 10z`,'#e49b60')).join(''),
+  hooks:()=>[16,38,60].map(x=>line(`M${x} 12v25q0 12 8 9 6-2 5-10`,'#4d818c',4)).join(''),
+  cloud:()=>pictureShape('M18 43Q4 41 8 30q3-8 13-8 4-19 22-15 13 1 15 13 16-2 16 11t-14 12z','#f9fcf5'),
+  sweater:()=>pictureShape('M27 11 18 14 6 42l11 4 9-17v22h28V29l9 17 11-4-12-28-10-3q-11 11-25 0z','#fff9eb')+line('M36 25v18m8-18v18', '#b6c6b2',2),
+  armor:()=>pictureShape('M25 8h30l13 13-9 12-6-4v21H27V29l-6 4-9-12z','#9ec4be')+line('M28 25h24m-24 8h24m-24 8h24m-13-25v33',pictureInk,1.5),
+  芝麻:()=>repeats(15,index=>ellipse(13+index%5*13+(index%3)*2,15+Math.floor(index/5)*14,3.5,1.8,pictureInk)),
+  雪點:()=>pictureShape('M12 10h56v38H12z','#aa7865')+repeats(9,index=>ellipse(18+index%3*18+(index%2)*4,17+Math.floor(index/3)*11,2.5,2.4,'#fff9ed')),
+  絨布:()=>pictureShape('M11 14q17-9 31 0t27-1v31q-12 10-28 2t-30 1z','#ba9c8a')+line('M19 23l17-2m-14 10 28 1m-24 7 30 4m-9-23 14 3','#8b7167',1.7),
+  鈕扣:()=>[16,40,64].map(x=>ellipse(x,28,10,10,'#c0798b')+ellipse(x-3,28,1.6,1.6,pictureInk)+ellipse(x+3,28,1.6,1.6,pictureInk)).join(''),
+  粗線:()=>pictureShape('M11 10h58v38H11z','#e7a165')+line('M17 22q27-11 46-3M17 34q29-8 45-5m-42 14q20-5 43-4',pictureInk,3.5),
+  沙丘:()=>pictureShape('M5 47Q25 42 36 18q13-16 25 13 8 13 14 16z','#e5b771'),
+  白袖子:()=>pictureShape('M10 14h37l22 15-9 19-30-10H10z','#354957')+pictureShape('M54 23l19 13-7 14-18-9z','#fff9ec'),
+  地磚:()=>pictureShape('M8 11h64v38H8z','#cf9a6a')+line('M8 24h64M8 36h64M29 12v12m23-12v12M20 25v11m22-11v11m18-11v11M30 37v12m22-12v12',pictureInk,1.7),
+  傘骨:()=>pictureShape('M8 29Q17 7 40 7t32 22Z','#b9d9d4')+line('M40 8Q24 11 23 29M40 8q16 3 17 21M40 7v38q0 8 7 5',pictureInk,2),
+  皺紋:()=>pictureShape('M11 8h58v42H11z','#9da8a1')+line('M20 17q20 14 40 0M18 27q22 14 44 0M23 37q17 13 36 0',pictureInk,2),
+  paper:()=>pictureShape('M23 5h27l10 10v36H23z','#fffdf4')+line('M50 5v10h10',pictureInk,1.5)
+};
+const poses = {
+  guard:['巡邏','M39 24l-9 9-6-6m16-3 9 11m-10 3-9 13m9-13 13 9','M18 23h8v7h-8z'],
+  inspect:['仔細檢查','M37 24l12 9 12-12m-23 5-8 13m10-2-10 14m10-14 12 13','M55 9a6 6 0 1 0 8 8l5 5 2-2-5-5a6 6 0 0 0-10-6z'],
+  parade:['走上舞台','M40 24l-12 14m13-14 9 8m-10 5-8 14m8-14 14 6','M21 52h43v4H21z'],
+  carpenter:['木匠敲打','M39 24l12 1 9-10m-20 13 9 11h12m-20-3-8 14m8-14 10 14','M58 8h14v5H58zm-1 6h5v11h-5zM55 42h21v6H55z'],
+  doctor:['替病人治病','M39 24l12 8 11-2m-23-6-8 11-9 3m17-1-8 14m8-14 9 14','M12 36h14v13H12zm4 4h6m-3-3v6M56 23h16v26H56zm4 9h8m-4-4v8'],
+  wave:['揮手打招呼','M40 25l-11 6-7-13m19 7 11 13m-12 0-8 13m8-13 10 13','M14 12l5 3 5-7 3 3-5 9-8-5z'],
+  pack:['收拾行李','M39 24l9 9 10 3m-19-9 9 12 9 1m-17-2-8 13m8-13 8 13','M55 39h20v14H55zm4-4h10v5H59z'],
+  stretch:['伸懶腰','M40 24l-12-8-3-10m16 18 12-8 3-10m-16 31-8 14m8-14 9 14',''],
+  door:['關上大門','M40 24l10 7 10-4m-19 0-10 10m9 0-10 14m10-14 10 14','M59 10h16v41H59z'],
+  sing:['唱歌','M40 24l10 7 3-14m-13 8-12 7m12 5-8 14m8-14 10 14','M52 14a4 4 0 1 1 7 4l-6 6-3-4z'],
+  race:['衝向終點','M41 25l11 6 11-9m-23 4-13 3m10 9 10 1 9 12m-19-13-11 8-10-2','M69 7h3v45h-3zm-10 1h12v9H59z'],
+  hurry:['急着趕路','M41 25l11 6 9-9m-21 4-12 4m9 8 10 1 8 12m-18-13-11 8-9-3','M24 21h8v17h-8z'],
+  show:['得意地表演','M40 24l-14-7-6 4m21 3 14-7 6 4m-21 16-12 8m12-8 13 8','M16 49h47v4H16z'],
+  carry:['搬東西','M37 24l13 11h13m-25-9 7 15h15m-21-4-9 13m9-13 9 13','M54 25h20v18H54z'],
+  sneak:['輕手輕腳','M40 24l13 7 6-9m-20 4-13 7m12 4 11 6 7 7m-18-13-9 9-7 4',''],
+  lead:['在前頭帶路','M40 24l12 6 10-10m-22 6-9 10m9 0-11 14m11-14 13 10','M23 19h10v17H23z'],
+  walk:['悠閒散步','M40 24l11 12m-11-11-7 12m7 0-9 13m9-13 14 11','']
+};
+function learningPicture(picture,animal) {
+  const pose = poses[picture];
+  if (picture === 'animal') return `<img class="choice-picture" src="${animalArt(animal)}" alt="${animal.name}插畫">`;
+  const drawing = pose ? ellipse(40,15,7,7,'#d89a73')+line(pose[1],pictureInk,4)+path(pose[2],'#dd9c56',pictureInk,1.3) : objectPictures[picture]?.();
+  return drawing ? `<svg class="choice-picture" viewBox="0 0 80 56" role="img" aria-label="${pose ? pose[0] : picture === 'chisel' ? '一把末端尖尖的小鑿子' : objectNames[picture] || '比喻物件'}">${drawing}</svg>` : '';
+}
+const featureClues = {
+  hedgehog:['背上的刺','小小的眼睛','短短的腿','短短的、尖尖的灰褐色刺','長長的、軟軟的白毛','圓圓的、光滑的黑點','brush','ball','hooks'],
+  peacock:['張開的尾羽','頭上的小羽毛','細細的腿','藍綠色，張開成半圓','黑白色，散成一條直線','黃色，捲成一個小圈','fan','rope','pipe'],
+  squirrel:['毛茸茸的尾巴','圓圓的眼睛','小小的前腳','又蓬又厚，向上彎','又細又直，貼着地面','扁扁的，像一塊板','duster','ribbon','glass'],
+  giraffe:['長長的脖子','短短的耳朵','小小的眼睛','又細又長，有褐色斑塊','又短又粗，有黑白條紋','圓圓的，沒有花紋','column','ball','fan'],
+  elephant:['長長的鼻子','圓圓的眼睛','短短的尾巴','又長又粗，末端會彎','又短又扁，不能彎','又小又圓，表面光滑','pipe','glass','ball'],
+  zebra:['身上的黑白條紋','尖尖的耳朵','細細的尾巴','黑白相間，一道接一道','黃黑相間，一點接一點','全身灰白，沒有花紋','shirt','cloud','armor'],
+  panda:['眼睛周圍的黑毛','短短的尾巴','腳底的肉墊','黑黑的，圍成兩個圓圈','白白的，排成兩條直線','灰灰的，散成小點','glasses','ribbon','hooks'],
+  lion:['頭頸的鬃毛','鼻尖的小黑點','尾巴末端的毛','金棕色，又厚又密','雪白色，又短又稀','深黑色，又直又硬','scarf','glass','flag'],
+  snail:['背上的殼','頭上的觸角','貼地的腳','棕色硬殼，花紋一圈圈','灰色軟毛，向兩邊散開','白色扁殼，上面有直紋','spiral','flag','glass'],
+  koala:['圓圓的耳朵','黑黑的鼻子','彎彎的爪子','灰灰的、圓圓的，邊緣有細毛','黑黑的、尖尖的，邊緣光滑','白白的、長長的，邊緣有條紋','ball','pipe','flag'],
+  butterfly:['展開的翅膀','細細的觸角','小小的腳','橙色一小塊一小塊，外圍有黑邊','白色一大片，外圍沒有花紋','全黑，一道道直紋','glass','scarf','rope']
+};
+const openingScenes = {hedgehog:'草地上有一隻刺蝟',peacock:'孔雀在草地上開屏',squirrel:'小松鼠蹲在樹枝上',elephant:'一頭大象走了過來',zebra:'草原上有一匹斑馬',panda:'大熊貓坐在竹林裏',lion:'一頭雄獅抬起了頭',snail:'小蝸牛慢慢爬過葉子',koala:'無尾熊抱着樹幹',butterfly:'蝴蝶停在花上'};
+const appearanceFragments = {
+  hedgehog:['我看到刺蝟的背上長着灰褐色的刺，','又短又密，尖端硬硬的，'],
+  peacock:['我看到孔雀揚起尾羽，','藍綠色的羽毛向四周伸展，排成半圓，'],
+  squirrel:['我看到松鼠翹着一條大尾巴，','又蓬又厚，向上彎起，'],
+  giraffe:['我看到長頸鹿伸長了脖子。','那又細又長的脖子上布滿褐色斑塊，'],
+  elephant:['我看見大象有向下垂的鼻子。','鼻子又長又粗，末端能彎起，'],
+  zebra:['我看到斑馬的身上長有黑白條紋，','一道接一道，沿着背部往下伸，'],
+  panda:['我看到大熊貓的兩隻眼睛外各有一圈黑毛，','又大又圓，'],
+  lion:['我看到雄獅頭頸上長着金棕色的鬃毛，','又厚又密，沿着臉頰垂下來，'],
+  snail:['我看到蝸牛背着一個棕色的硬殼，','外形圓圓的，花紋一圈圈往外轉，'],
+  koala:['我看到無尾熊頭上有兩隻灰耳朵，','圓圓的，邊緣長滿細毛，'],
+  butterfly:['我看到蝴蝶展開了翅膀，','橙色的翅面分成一小塊一小塊，四周有黑邊，']
+};
+const actionClues = {
+  owl:['眼睛又圓又亮','牠轉動腦袋，認真地巡邏','guard','「咕、咕」兩聲響起，牠瞪大雙眼，神情十分緊張','lamp','flag','scarf'],
+  chameleon:['尾巴捲成一圈','牠慢慢走，仔細檢查前面的樹枝','inspect','葉子沙沙響，牠睜大眼睛看着四周','rope','column','glass'],
+  penguin:['背黑黑的，肚皮白白的','牠挺起肚子，神氣地走上舞台','parade','腳步啪嗒啪嗒響，牠抬起頭的樣子威風凜凜','suit','cloud','flag'],
+  woodpecker:['嘴巴又長又直，末端尖尖的','牠忙着替大樹治病，把樹幹裏的小蟲一條條捉出來','doctor','「篤、篤」兩聲響起，牠側着頭，很認真','chisel','hammer','ball'],
+  macaw:['翅膀上有紅、黃、藍三種顏色','牠揚起翅膀，向同伴打招呼','wave','「嘎！」一聲響起，牠抬頭，一臉神氣','ribbon','scarf','lamp'],
+  fox:['兩隻耳朵都是尖尖的三角形','牠踮起腳，在草裏尋找線索','inspect','草葉沙沙一響，牠立刻停步，緊張地盯着前方','flag','lamp','rope'],
+  bee:['肚子圓鼓鼓的，有一圈圈深淺條紋','牠到花兒家作客，把花粉裝進行李','pack','花叢裏傳來嗡嗡聲，牠貼着花心，忙個不停','shirt','ball','cloud'],
+  sloth:['爪子彎彎的，能勾住樹枝','牠掛在樹枝上，慢慢伸了個懶腰','stretch','這時，葉子沙沙響，牠半閉着眼，很舒服','hooks','column','ball'],
+  alpaca:['捲毛顏色很淺，又蓬又厚','牠抬起頭，歡迎走近的同伴','wave','牠「嗯、嗯」地叫了兩聲，睜大眼睛，一臉好奇','cloud','glass','rope'],
+  polar:['皮毛又白又厚','牠低下頭，在雪地裏找線索','inspect','腳下咯吱一響，牠立刻抬頭，小心地看着四周','sweater','glass','flag'],
+  pangolin:['背上長着褐色鱗片，一片疊一片','牠把頭一縮，給自己關上大門','door','外面傳來葉子的沙沙聲，牠緊張得一動也不敢動','armor','scarf','cloud']
+};
+const routeClues = {
+  cheetah:['芝麻','撒在黃布上的芝麻','牠一心想跑第一，連頭也不回','race','皮毛上的斑點','黃色的毛上有小黑點','飛快地跑過草地','伏在草叢裏，靜靜地望着前方'],
+  deer:['雪點','落在棕色布上的小雪點','牠朝樹林跑去，急着和朋友見面','hurry','背上的斑點','棕色的毛上有小白點','抬起頭，輕輕跳過矮草','站在林邊，耳朵豎得直直的'],
+  kangaroo:['絨布','一塊軟軟的絨布','落地後，牠得意地望着同伴，等大家拍手','show','身上的短毛','身上有一層細細的灰棕色短毛','後腿一用力，跳過草地','直直地站着，粗大的尾巴撐在地上'],
+  octopus:['鈕扣','一排小鈕扣','接着，牠當起搬運工，把石頭搬到一旁','carry','長腕底下的吸盤','長腕底下排着小小的圓吸盤','伸出一條長腕，抓住石頭','伏在海底，幾條長腕靜靜地貼着沙地'],
+  tiger:['粗線','畫在橙色布上的粗線','牠輕手輕腳，怕吵醒鄰居','sneak','背上的條紋','橙色的背上有一道道黑紋','低下身子，鑽進草叢','站在草叢旁，眼睛盯着前方'],
+  camel:['沙丘','一座小沙丘','牠背着大包，在前頭為同伴帶路','lead','背上的駝峰','駝峰頂上的毛顏色較深','邁開腿，踏上沙地','站在沙地邊，長長的脖子直直地伸着'],
+  ostrich:['白袖子','黑大衣裏露出的白袖子','牠一心想拿第一，不讓同伴追上','race','翅膀上露出的白羽毛','黑色的羽毛中露出一片白羽毛','跨開大步，向前跑','站得高高的，長脖子直直地伸向天空'],
+  turtle:['地磚','拼在一起的小地磚','牠一點也不趕時間，在海裏散步','walk','背殼上的花紋','背殼上有一塊塊有角的花紋','拍動前肢，向前划了一下','靜靜地浮在水中，大圓殼微微傾斜'],
+  bat:['傘骨','雨傘裏的傘骨','牠越過樹頂，開始巡邏','guard','翅膀上的細線','翅膀上有幾條細線','鬆開爪子，拍着翅膀飛走','靜靜地倒掛在樹枝上，翅膀收在身旁'],
+  rhino:['皺紋','厚大衣上的皺紋','牠挺起胸，神氣地在草地巡邏','guard','肩上的摺痕','肩上的灰皮有一道道摺痕','抬起頭，重重地踏出一步','低着頭站在草地上，四腳一動也不動']
+};
+function questionsFor(animal, mode, difficulty) {
+  const {name,part,detail,extra,art,remaining,stage} = animal;
+  const guided = difficulty === 'guided';
+  const similar = '比一比形狀、顏色或質感，再選最相似的物件。';
+  const figurative = '這句有「像」，是在打比方，不是直接把動物當成人來寫。';
+  const literal = '這只寫了動物本來會做的事，沒有把牠當成人來寫。';
+  const compare = (label,picture,reason='',subject='看起來') => {
+    const sentence = `${subject}像${label}。`;
+    return choice(guided ? label : sentence,picture,reason,sentence);
+  };
+  const link = (text,...args) => ({link:text,...task(...args)});
   if (stage === 0) {
-    const other = animals[rawAnimals.findIndex(row => row[0] === name) === 3 ? 2 : 3];
-    const wrongPart = ['頭上的耳朵','背上的刺','展開的翅膀'].filter(item => item !== part);
+    const [focus,firstPart,secondPart,shortDetail,firstDetail,secondDetail,picture,firstPicture,secondPicture] = featureClues[art];
+    const subject = `牠的${part}`;
+    const [introduction,description] = appearanceFragments[art];
     return [
-      task('鏡頭放大了哪個部位？','只看黃圈附近，先說出部位名稱。',choice(`我看見${name}${part}。`,emoji),choice(`我看見${name}${wrongPart[0]}。`,'👂',`再看黃圈：這次放大的是「${part}」，不是「${wrongPart[0]}」。`),choice(`我看見${name}${wrongPart[1]}。`,'👀',`你找了另一個部位。把視線移到黃圈，看清「${part}」。`)),
-      task('哪一項最能寫清楚這個部位？','留意顏色、形狀、長短或質感。',choice(`${detail}。`,'🎨'),choice('這個部位很特別，也很好看。','✨','「特別」和「好看」說不清樣子。試試選出寫了顏色、形狀或質感的句子。'),choice(`${other.detail}。`,'🔎',`這說的是${other.name}${other.part}！請看看${name}${part}真正的樣子。`)),
-      task('哪個比喻找到了相似之處？','鏡頭拉回全景，想想兩樣事物哪裏相似。',choice(`看起來就像${extra}。`,marker),choice(`看起來就像${other.extra}。`,other.marker,`把「${part}」跟這件物品比較。它們的形狀、顏色或質感真的相似嗎？`),choice('牠在認真地觀察四周。','👀','這句寫的是動作，沒有把這個部位跟另一件事物作比較。'))
+      task(art === 'giraffe' ? '大草原上的長頸鹿，哪個身體部位最引人注意？' : `${openingScenes[art]}，鏡頭對準了哪個部位？`,'看看黃圈裏的部位。',choice(focus,'','',introduction),choice(firstPart,'','再看看黃圈，鏡頭對準的是另一個部位。'),choice(secondPart,'','把視線移回黃圈，找出最顯眼的部位。')),
+      link(`接着看清剛才選的部位：${part}`,art === 'giraffe' ? '牠的脖子有甚麼形狀和顏色斑紋？' : `${subject}是甚麼樣子的？`,'選出符合這個部位的詞語。',choice(guided ? shortDetail : detail,'','',description),choice(firstDetail,'','再看看牠的形狀和顏色，這一項跟畫面不一樣。'),choice(secondDetail,'','比一比畫面裏的顏色和花紋，再選一次。')),
+      link(`剛才看清了特徵：${guided ? shortDetail : detail}`,`${subject}看起來像甚麼？`,similar,compare(extra,picture),compare(objectNames[firstPicture],firstPicture,similar),compare(objectNames[secondPicture],secondPicture,similar))
     ];
   }
   if (stage === 1) {
     const [action,sense,verb] = remaining;
-    const actionLookalikes = {叫:'牠像廣播員一樣叫了一聲。',動:'牠像探險家一樣慢慢挪動。',走:'牠像守衛一樣一步一步向前走。',啄:'牠像木工一樣啄着樹幹。',飛:'牠像小郵差一樣飛來飛去。'};
+    const [shortDetail,shortAction,pose,shortSense,picture,firstPicture,secondPicture] = actionClues[art];
+    const lookalikes = {叫:['牠像歌手一樣叫了一聲。','sing','牠叫了一聲。'],動:['牠像探險家一樣慢慢移動。','lead','牠稍稍動了一下。'],走:['牠像跑手一樣向前走。','race','牠向前走了幾步。'],啄:['牠像工人一樣用嘴敲着樹幹。','carpenter','牠用嘴啄了幾下樹幹。'],飛:['牠像郵差一樣飛來飛去。','carry','牠拍着翅膀飛來飛去。']};
+    const [lookalike,lookPose,natural] = lookalikes[verb];
+    const heard = shortSense.replace(/^這時，/,'').split('，')[0];
     return [
-      task('怎樣用比喻描寫牠的外形？',`先看看${name}的${part}，再想想像甚麼。`,choice(`${name}${detail}，像${extra}。`,marker),choice(`${name}的${part}真是特別！`,emoji,'「特別」沒有說出外形，也沒有比較兩樣事物。'),choice(`${name}的${part}像一粒沒有顏色的灰塵。`,'🌫️',`這個比喻沒抓住特徵。看清${part}的形狀、色彩或質感，再選相似的物件。`)),
-      task('哪句不用「像」字，直接寫出人的動作？','擬人法：把牠當成故事角色，直接寫牠做甚麼。',choice(`${action}。`,'🎭'),choice(actionLookalikes[verb],'💭','這句用了「像」來打比方。把「像」拿掉，直接寫牠在做哪件人會做的事。'),choice(`牠${verb}了一下。`,emoji,'這只寫了動物原本會做的事。試試選一個把牠當成人來寫的動作。')),
-      task('哪句同時寫出聲音和神態？','留意聽見了甚麼，以及牠的表情或眼神。',choice(`${sense}。`,'👂'),choice('我聽見牠那邊傳出了聲音。','🔊','有提到聲音，卻沒有讓讀者知道聲音怎樣響，也沒有描寫牠的神情。'),choice('我看到牠的頭轉了過來。','👁️','這只寫了動作；試試同時寫出聲音和神態。'))
+      link(`先畫出樣子：${guided ? shortDetail : detail}`,`${name}的${part}像甚麼？`,similar,choice(guided ? extra : `像${extra}。`,picture,'',`${name}的${guided ? shortDetail : detail}，像${extra}。`),compare(objectNames[firstPicture],firstPicture,similar,''),compare(objectNames[secondPicture],secondPicture,similar,'')),
+      link('寫好了外形，再讓牠動起來',`哪句用擬人法寫${name}的動作，不用「像」字？`,'想像牠是故事裏的人：牠會做甚麼？',choice(`${guided ? shortAction : action}。`,pose),choice(lookalike,lookPose,figurative),choice(natural,'animal',literal)),
+      link('看過牠的動作，再聽聲音、看表情',`哪句同時寫出${name}的聲音和神態？`,'要選一句既聽得到，也看得見的描寫。',choice(`${guided ? shortSense : sense}。`),choice(`${heard}。`,'','這句只有聲音，還沒寫牠的表情。'),choice('牠睜大眼睛，望向前方。','','這句只有表情，還沒寫聲音。'))
     ];
   }
-  const {motion,comparison,personification} = animal.advanced;
-  const transition = animal.art === 'bat' ? '夜幕降臨後' : '突然';
+  const {comparison,personification} = animal.advanced;
+  const [picture,shortComparison,shortPersonification,pose,feature,shortDetail,shortMotion,stillPose] = routeClues[art];
+  const motion = guided ? shortMotion : animal.advanced.motion;
+  const closeup = guided ? shortDetail : detail;
+  const likeness = guided ? shortComparison : comparison;
+  const closeupLead = ['octopus','turtle'].includes(art) ? '鏡頭拉近後' : '走近一看';
+  const comparisonLead = art === 'camel' ? '整個駝峰就像' : '就像';
+  const transition = art === 'bat' ? (guided ? '天黑後' : '夜幕降臨後') : '突然';
   const distant = mode === 'distance';
   return [
-    distant ? task('遠遠看，先寫甚麼？','先看整隻動物的形狀。',choice(`遠遠望去，${name}${part}。`,'🔭'),choice(`牠的${detail}。`,'🔍','這是走近才看清的細節。'),choice('我看清牠細細的睫毛。','👁️','遠處看不清睫毛。先寫全身。')) :
-      task('牠還沒動，哪句寫得對？','先寫牠靜止時的樣子。',choice(`${name}一動也不動，${part}。`,'⏸️'),choice(`${transition}，牠${motion}。`,'💨','這是後來的動作。先寫牠還沒動的樣子。'),choice('牠不停地動。','🎬','「不停地動」不是靜止。')),
-    distant ? task('走近後，你看清了甚麼？','找一個遠處看不清的細節。',choice(`走近一看，牠的${detail}。`,'🔎'),choice('我退遠了一點，看見牠的身影。','↪️','要先走近，才看得清細節。'),choice('我只看見牠的全身。','🔭','已經寫過全身，現在要寫一個細節。')) :
-      task(`${name}開始動了，牠做了甚麼？`,`找出用「${transition}」帶出動作的句子。`,choice(`${transition}，牠${motion}。`,'🎬'),choice('牠還是停在那裏。','⏸️','這句還是寫牠停着，沒有新動作。'),choice('我走近，看清牠的樣子。','🔍','這句寫的是「我」走近，不是動物的動作。')),
-    distant ? task('哪個比喻寫出了剛才的細節？','想一想：這個細節像甚麼？',choice(`${comparison}。`,'✨'),choice('牠身上像白紙一樣，甚麼也沒有。','📄','白紙沒寫出剛才看到的細節。'),choice('牠的樣子真好看。','💬','這句沒有用比喻。')) :
-      task('哪句用擬人來寫動作，不用「像」字？','把牠當成人來寫。',choice(`${personification}。`,'🎭'),choice('牠像趕着上課的孩子一樣。','💭','用了「像」來比一比，是比喻。'),choice('過了一會兒，牠停下來。','🛑','只寫了停下來，沒有把牠當成人寫。'))
+    distant ? task(`從遠處觀察${name}，你先看到甚麼？`,'先看全身的形狀，不看小細節。',choice(`遠遠望去，${name}${part}。`),choice(`${closeup}。`,'','這是走近才看得清的細節。'),choice('我看清牠眼睛的顏色。','','遠處看不清這麼小的地方。先寫全身。')) :
+      task(`${name}還沒動，牠是甚麼樣子的？`,'先寫鏡頭停住時看到的畫面。',choice(`${name}${stillPose}。`),choice(`${transition}，牠${motion}。`,'','這是後來的動作。先寫牠還沒動的樣子。'),choice('牠不停地動。','','「不停地動」不是靜止。')),
+    distant ? link('剛才遠看全身，現在拉近鏡頭',`近看${name}，${feature}是甚麼樣子的？`,'找一個遠處看不清的花紋或特徵。',choice(`${closeupLead}，${closeup}。`,'','',`${closeupLead}，${closeup}，`),choice(`我看到${name}${part}。`,'','這是剛才已經看到的全身樣子。'),choice('我只看到一個模糊的影子。','','走近後，應該看得更清楚。')) :
+      link('剛才一動不動，現在讓畫面動起來',`${name}開始動了，牠做了甚麼？`,`留意「${transition}」後面寫了誰在動。`,choice(`${transition}，牠${motion}。`),choice('牠還是一動也不動。','','這句還是寫牠停着，沒有新動作。'),choice('我走近去看牠。','','這句寫的是「我」走近，不是動物的動作。')),
+    distant ? link('把剛才看清的細節寫成比喻',`看看${name}，${feature}像甚麼？`,similar,choice(`像${likeness}。`,picture,'',`${comparisonLead}${likeness}。`),choice('像一張白紙。','paper',similar),choice('像一團棉花。','cloud',similar)) :
+      link('沿用剛才的動作，把牠當成人來寫',`哪句用擬人法寫${name}的動作，不用「像」字？`,'找出一句直接寫人會做的事。',choice(`${guided ? shortPersonification : personification}。`,pose),choice('牠像趕着上課的孩子一樣。','hurry',figurative),choice(`牠${motion}。`,'animal',literal))
   ];
 }
 const app = document.getElementById('app');
@@ -259,7 +406,8 @@ const footer = document.getElementById('footer');
 const demoBar = document.getElementById('demo');
 const atlas = document.getElementById('atlas');
 const teacher = document.getElementById('teacher');
-const player = {unlocked:0,finished:-1,notesByStage:[],runs:[],className:'',studentName:''};
+const difficulties = {guided:{label:'初階',description:'短句和常用詞，翻開比喻、擬人選項便可看圖。'},challenge:{label:'進階',description:'用較豐富的詞語和句子，自己找出線索。'}};
+const player = {unlocked:0,finished:-1,notesByStage:[],difficulty:'guided',runs:{guided:[],challenge:[]},className:'',studentName:''};
 let currentRun = null;
 let view = 'home';
 let demoBackup = null;
@@ -269,14 +417,53 @@ let currentDrag;
 let clickSuppressedUntil = 0;
 const heroAnimal = {...animals[22],photo:`${commons}thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/1280px-Male_cheetah_facing_left_in_South_Africa.jpg`};
 const levelCount = stage => animals.filter(animal => animal.stage === stage).length;
-const makeRun = (stage,previousRun = null) => {
+const huntSkies = [
+  {name:'晨光',top:'#74adba',low:'#f3dfad',sun:'#fff0ba',ridge:'#65878a'},
+  {name:'晴空',top:'#689cab',low:'#d0e3cc',sun:'#fff5c6',ridge:'#658e88'},
+  {name:'晚霞',top:'#907e9d',low:'#f1bb8d',sun:'#ffe1a1',ridge:'#786e8e'},
+  {name:'薄暮',top:'#547b95',low:'#c9aabd',sun:'#fff3da',ridge:'#576e91'}
+];
+const huntHabitats = {
+  forest:{name:'林地',ground:'#77945f',shade:'#426f52'}, jungle:{name:'熱帶森林',ground:'#648f66',shade:'#306556'},
+  grass:{name:'大草原',ground:'#c4a765',shade:'#806944'}, mountain:{name:'山地',ground:'#879d85',shade:'#566d61'},
+  desert:{name:'沙漠',ground:'#d8a568',shade:'#9e704e'}, ice:{name:'冰原與海冰',ground:'#bbd9dc',shade:'#6a9ba9'},
+  sea:{name:'海洋',ground:'#358792',shade:'#235a69'}, meadow:{name:'花草地',ground:'#9caa63',shade:'#547951'}
+};
+const habitatGroups = {
+  forest:['squirrel','owl','woodpecker','snail','koala','chameleon','bat','deer','tiger'],
+  jungle:['macaw','sloth'], grass:['giraffe','elephant','zebra','lion','fox','pangolin','cheetah','kangaroo','ostrich','rhino'],
+  mountain:['panda','alpaca'], desert:['camel'], ice:['penguin','polar'], sea:['octopus','turtle'], meadow:['hedgehog','peacock','butterfly','bee']
+};
+const habitatByAnimal = Object.fromEntries(Object.entries(habitatGroups).flatMap(([habitat,entries])=>entries.map(art=>[art,habitat])));
+const silhouetteHeights = {owl:38,woodpecker:42,squirrel:44,koala:42,chameleon:46,macaw:37,sloth:43,bat:32,butterfly:43,bee:42,turtle:56,octopus:74};
+function habitatArt(habitat,sky,key,sunPosition) {
+  const {ground,shade} = huntHabitats[habitat];
+  const land = path('M0 282Q90 251 178 272T360 269V420H0Z',ground)+path('M0 353Q95 331 170 354T360 347v73H0z',shade+'62');
+  const mountains = path('M0 235l77-109 42 40 59-112 67 116 46-63 69 111v82H0z',sky.ridge)+path('m113 177 65-123 63 109-30-26-19 13-20-31-21 25-9-8z','#f2f3dfc9');
+  const cloud = (spot,height) => ellipse(spot,height,29,9,'#fbf3d952')+ellipse(spot+19,height+5,27,6,'#fbf3d960');
+  const trees = (spot,height,width) => path(`M${spot-4} 307h8V${height+31}h-8z`,shade)+ellipse(spot,height,width,34,shade)+ellipse(spot-width*.7,height+20,width*.72,27,shade)+ellipse(spot+width*.65,height+13,width*.68,25,shade);
+  const foliage = repeats(9,index=>{const left=(index*41+14)%360,top=365+index%3*14;return line(`M${left} ${top}l-4-10m4 10 4-14m-4 14 9-7`,shade,2);});
+  const landscape = {
+    forest:()=>mountains+land+trees(27,144,35)+trees(330,121,43)+line('M332 174q-84 1-159 34',shade,8)+foliage,
+    jungle:()=>land+trees(27,118,51)+trees(337,112,58)+line('M333 159q-122-21-237 34',shade,13)+line('M293 164q-12 49 0 96m-46-92q17 33-3 70',shade,3)+foliage,
+    grass:()=>path('M0 254q63-56 150-2 54-40 113-18l97 26v35H0z',sky.ridge)+land+path('M282 277v-70h5l9 68m-65-70q11-22 51-25 36-2 67 24-42 13-118 1z',shade)+foliage,
+    mountain:()=>mountains+land+path('M19 331l26-30 22 9 11 21zm242 49 30-38 31-4 25 42z',shade)+foliage,
+    desert:()=>path('M0 254q81-87 166-15 69-71 194-11v192H0z',ground)+path('M0 346q125-136 247-58 69 41 113 33v99H0z',shade+'8c')+line('M21 373q115-52 207-28',ground,3),
+    ice:()=>mountains+path('M0 278q79-25 177-9 127 22 183-2v153H0z',ground)+path('M0 349l60-35 91 9 55 40 154-36v93H0z',shade)+line('M28 389h89m104 3h49',ground,3),
+    sea:()=>path('M0 181q45-10 87 0t91 0 91 0 91 0v239H0z',ground)+path('M0 317q100 20 191-2t169 4v101H0z',shade)+line('M5 192q45-13 100 0t102-1 146 0', '#a0d6d7a8',3)+repeats(8,index=>ellipse(24+index*46,204+index%3*32,3+index%3*2,3+index%3*2,'#bde5df8c'))+line('M26 402q-17-21 1-48m17 53q15-23 1-55m279 55q23-20 8-67',ground,6),
+    meadow:()=>path('M0 247q79-85 175-12 104-52 185 5v60H0z',sky.ridge)+land+foliage+repeats(12,index=>{const spot=(index*73+12)%360,height=272+index%4*28;return line(`M${spot} ${height}v12`,shade,2)+ellipse(spot,height,3.7,3.7,index%2?'#ffdeb0':'#efbdcf');})
+  };
+  return `<svg class="habitat-art" viewBox="0 0 360 420" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${key}" x2="0%" y2="100%"><stop stop-color="${sky.top}"/><stop offset="100%" stop-color="${sky.low}"/></linearGradient></defs>${path('M0 0h360v420H0z',`url(#${key})`)}${ellipse(sunPosition,79,26,26,sky.sun)}${cloud(69,99)}${cloud(264,60)}${landscape[habitat]()}</svg>`;
+}
+const makeRun = (stage,previousRun = null,difficulty = player.difficulty) => {
   const startingMode = Math.random() < .5 ? 0 : 1;
   const previousAnimals = previousRun?.rounds.map(round=>round.animal) || [];
   const rounds = shuffle(animals.filter(animal => animal.stage === stage && !previousAnimals.includes(animal))).slice(0,3).map((animal,index) => {
     const mode = (index+startingMode)%2 ? 'movement' : 'distance';
-    return {animal,mode,tasks:questionsFor(animal,mode),parts:[]};
+    return {animal,mode,tasks:questionsFor(animal,mode,difficulty),parts:[]};
   });
-  return {stage,rounds,replay:!!previousRun,roundIndex:0,step:0,answered:false,view:'station',summary:{bank:shuffle(stages[stage].words),slots:[null,null,null],marks:[],selected:null,passed:false,status:''}};
+  const hunt = {order:shuffle(rounds.map((_,index)=>index)),skies:shuffle(huntSkies),spots:rounds.map(()=>Array.from({length:4},()=>[41+Math.random()*18,Math.random()*8-4]))};
+  return {stage,difficulty,rounds,hunt,replay:!!previousRun,roundIndex:0,step:0,answered:false,view:'station',summary:{bank:shuffle(stages[stage].words),slots:[null,null,null],marks:[],selected:null,passed:false,status:''}};
 };
 function chime() {
   const Audio = window.AudioContext || window.webkitAudioContext;
@@ -302,7 +489,7 @@ function chime() {
 header.innerHTML = `<button class="brand" data-action="home" aria-label="返回遊戲首頁"><span class="brand-mark">${icon('lens',24)}</span><span><strong>立體句魔法鏡</strong><small>小三中文 · 寫作探險</small></span></button><nav class="nav" aria-label="遊戲工具"><button class="button ghost" data-action="atlas">${icon('book',17)}<span>32 種動物圖鑑</span></button><button class="button teacher-button" data-action="teacher">${icon('teacher',17)}<span>教師控制台</span></button></nav>`;
 function go(nextView) {
   view = nextView;
-  if (currentRun && ['station','game','pause','summary'].includes(view)) currentRun.view = view;
+  if (currentRun && ['station','hunt','game','pause','summary','review'].includes(view)) currentRun.view = view;
   if (cameraObserver) { cameraObserver.disconnect(); cameraObserver = null; }
   endDrag();
   render();
@@ -311,8 +498,10 @@ function go(nextView) {
 }
 function start(stage) {
   if (stage > player.unlocked || !stages[stage]) return;
-  const previousRun = player.runs[stage];
-  currentRun = player.runs[stage] = !previousRun || previousRun.summary.passed ? makeRun(stage,previousRun) : previousRun;
+  const runs = player.runs[player.difficulty];
+  const previousRun = runs[stage];
+  const awaitingReview = stage === 1 && !previousRun?.reviewed;
+  currentRun = runs[stage] = !previousRun || (previousRun.summary.passed && !awaitingReview) ? makeRun(stage,previousRun) : previousRun;
   go(currentRun.view);
 }
 function render() {
@@ -320,20 +509,22 @@ function render() {
   demoBar.innerHTML = `<div class="wrap flex items-center justify-between gap-2"><span>教師示範模式 · 不影響學生進度</span><button class="button ghost" data-action="exit-demo">離開示範</button></div>`;
   header.closest('header').hidden = view === 'pause';
   footer.hidden = view === 'pause';
-  ({home:renderHome,station:renderStation,game:renderGame,pause:renderPause,summary:renderSummary,certificate:renderCertificate})[view]();
+  ({home:renderHome,station:renderStation,hunt:renderHunt,game:renderGame,pause:renderPause,summary:renderSummary,review:renderReview,certificate:renderCertificate})[view]();
 }
 function renderHome() {
   const activeLevel = Math.min(player.unlocked,2);
   const graduated = player.finished === 2;
+  const runs = player.runs[player.difficulty];
   const card = (stage,index) => {
     const complete = index <= player.finished;
     const locked = index > player.unlocked;
-    const run = player.runs[index];
-    const label = locked ? '尚未解鎖' : run?.summary.passed ? '重新挑戰' : run ? '繼續挑戰' : '開始這一關';
+    const run = runs[index];
+    const label = locked ? '尚未解鎖' : index === 1 && run?.summary.passed && !run.reviewed ? '繼續課堂重溫' : run?.summary.passed ? '重新挑戰' : run ? '繼續挑戰' : '開始這一關';
     return `<article class="level tone-${index}"><div class="flex justify-between items-center gap-2"><span class="level-icon">${icon(stage.symbol,22)}</span><span class="badge">${stage.order} · ${stage.tag}</span></div><div><h3>${stage.name}</h3><p>${stage.description}</p></div><span class="level-meta">${levelCount(index)} 種動物 · 隨機挑戰 3 種${complete ? ' <span class="level-complete">✓ 已完成</span>' : ''}</span><button class="button ${index === activeLevel && !complete ? 'primary' : 'ghost'}" data-action="start" data-stage="${index}" ${locked ? 'disabled' : ''} aria-label="${stage.order}${stage.name}：${label}">${label}${icon(locked ? 'lock' : 'arrow',16)}</button></article>`;
   };
   const wave = '<svg class="hero-wave" viewBox="0 0 1000 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C175 65 327 5 513 18S790 36 1000 1V44H0Z"/><path d="M0 32C194 58 343 18 512 29S810 41 1000 12V44H0Z"/></svg>';
-  app.innerHTML = `<div class="wrap home"><section class="hero" aria-labelledby="hero-title">${photoMarkup(heroAnimal,'hero-image')}<span class="frame-corner"></span><span class="photo-label"><i class="dot"></i> 野外觀察 · 獵豹</span><div class="hero-body"><span class="hero-kicker kicker">${icon('sparkle',14)} 小三中文 · 互動寫作遊戲</span><h1 id="hero-title" data-heading tabindex="-1">立體句魔法鏡<span>動物寫作大挑戰</span></h1><p>把鏡頭對準動物，找出精彩小細節。<br>一步一步，把觀察變成生動的立體句！</p><button class="button lime" data-action="${graduated ? 'certificate' : 'start'}" data-stage="${activeLevel}">${graduated ? '查看小大師證書' : player.runs[activeLevel] ? `繼續${stages[activeLevel].order}` : `開始${stages[activeLevel].order}`}${icon('arrow',18)}</button></div>${wave}</section><section aria-labelledby="level-title"><div class="section-head flex justify-between"><div><div class="kicker">FIELD GUIDE / 01–03</div><h2 id="level-title">選擇你的寫作關卡</h2></div><p>完成小總結就能解鎖下一關。已完成的關卡也可以重玩！</p></div><div class="level-grid">${stages.map(card).join('')}</div></section><p class="home-tip">${icon('sparkle',17)}<span><strong>探險小提示：</strong>先讀題，翻開三個選項，再選出最合適的一句。</span></p></div>`;
+  const picker = `<div class="difficulty-picker" role="group" aria-labelledby="difficulty-title"><strong id="difficulty-title">選擇難度</strong><div class="difficulty-buttons">${Object.entries(difficulties).map(([mode,{label}])=>`<button class="button ghost" data-action="difficulty" data-mode="${mode}" aria-pressed="${mode === player.difficulty}">${label}</button>`).join('')}</div><p role="status">${difficulties[player.difficulty].description}</p></div>`;
+  app.innerHTML = `<div class="wrap home"><section class="hero" aria-labelledby="hero-title">${photoMarkup(heroAnimal,'hero-image')}<span class="frame-corner"></span><span class="photo-label"><i class="dot"></i> 野外觀察 · 獵豹</span><div class="hero-body"><span class="hero-kicker kicker">${icon('sparkle',14)} 小三中文 · 互動寫作遊戲</span><h1 id="hero-title" data-heading tabindex="-1">立體句魔法鏡<span>動物寫作大挑戰</span></h1><p>把鏡頭對準動物，找出精彩小細節。<br>一步一步，把觀察變成生動的立體句！</p><button class="button lime" data-action="${graduated ? 'certificate' : 'start'}" data-stage="${activeLevel}">${graduated ? '查看小大師證書' : runs[activeLevel] ? `繼續${stages[activeLevel].order}` : `開始${stages[activeLevel].order} · ${difficulties[player.difficulty].label}`}${icon('arrow',18)}</button></div>${wave}</section><section aria-labelledby="level-title"><div class="section-head flex justify-between"><div><div class="kicker">野外圖鑑 / 01–03</div><h2 id="level-title">選擇你的寫作關卡</h2></div><p>完成小總結就能解鎖下一關。已完成的關卡也可以重玩！</p></div>${picker}<div class="level-grid">${stages.map(card).join('')}</div></section><p class="home-tip">${icon('sparkle',17)}<span><strong>探險小提示：</strong>先讀題，翻開三個選項，再選出最合適的一項。</span></p></div>`;
 }
 const writingRoute = (steps,current = -1,completed = 0) => `<ol class="writing-route">${steps.map((label,index)=>`${index ? '<li class="route-arrow" aria-hidden="true">→</li>' : ''}<li class="${index === current ? 'current' : ''} ${index < completed ? 'done' : ''}" ${index === current ? 'aria-current="step"' : ''}><span class="route-index" aria-hidden="true">${index < completed ? '✓' : index+1}</span>${label}</li>`).join('')}</ol>`;
 function renderStation() {
@@ -341,10 +532,66 @@ function renderStation() {
   const level = stages[stage];
   const sample = animals[level.sample];
   const routes = stage === 2 ? Object.values(advancedRoutes).map(({name,steps})=>`<div><span class="route-name">${name}</span>${writingRoute(steps)}</div>`).join('') : writingRoute(level.steps);
-  app.innerHTML = `<div class="wrap screen tone-${stage}"><div class="round flex justify-between items-center"><span class="eyebrow">${level.order} · ${level.name}</span><button class="button ghost" data-action="home">${icon('home',16)} 返回選關</button></div><section class="station"><div class="station-photo">${photoMarkup(sample)}<span>${sample.name} · ${sample.habitat}</span></div><div class="surface"><span class="eyebrow">✦ 情境思考站 · 不用作答</span><h1 class="screen-title" data-heading tabindex="-1">${level.scene}</h1><p>${level.sceneText}</p><p class="callout">${level.think}</p><div class="station-route"><h2>本關段落鋪排</h2>${routes}</div><button class="button primary" data-action="begin">進入答題畫面 ${icon('arrow',17)}</button></div></section></div>`;
+  app.innerHTML = `<div class="wrap screen tone-${stage}"><div class="round flex justify-between items-center"><span class="eyebrow">${level.order} · ${level.name}</span><button class="button ghost" data-action="home">${icon('home',16)} 返回選關</button></div><section class="station"><div class="station-photo">${photoMarkup(sample)}<span>${sample.name} · ${sample.habitat}</span></div><div class="surface"><span class="eyebrow">✦ 情境思考站 · 不用作答</span><h1 class="screen-title" data-heading tabindex="-1">${level.scene}</h1><p>${level.sceneText}</p><p class="callout">${level.think}</p><div class="station-route"><h2>本關段落鋪排</h2>${routes}</div><button class="button primary" data-action="begin">到野外尋找動物 ${icon('arrow',17)}</button></div></section></div>`;
+}
+function renderHunt() {
+  const {stage,roundIndex,rounds,hunt} = currentRun;
+  const level = stages[stage];
+  const current = rounds[roundIndex]?.animal;
+  const sky = hunt.skies[roundIndex];
+  const rotation = roundIndex % rounds.length;
+  const order = hunt.order.slice(rotation).concat(hunt.order.slice(0,rotation));
+  const scenery = order.map((index,zone)=>{
+    const {animal} = rounds[index];
+    const habitat = habitatByAnimal[animal.art];
+    const [x,offset] = hunt.spots[index][roundIndex];
+    const y = (silhouetteHeights[animal.art] || 71)+offset;
+    const state = index < roundIndex ? 'done' : index === roundIndex ? 'ready' : 'locked';
+    const label = state === 'ready' ? `拍攝${animal.name}剪影` : state === 'done' ? `已完成：${animal.name}` : '尚未解鎖的剪影';
+    const mark = state === 'locked' ? icon('lock',14) : state === 'done' ? '✓' : '';
+    const drawing = animalDrawing(animal.art).replaceAll('torso',`hunt-torso-${index}`);
+    return `<div class="hunt-zone">${habitatArt(habitat,sky,`hunt-sky-${zone}`,122+(zone*78+roundIndex*41)%124)}<button class="hunt-target" data-action="capture" data-index="${index}" data-state="${state}" style="--spot-x:${x}%;--spot-y:${y}%" aria-label="${label}" ${state === 'ready' ? '' : 'disabled'}><svg class="silhouette" viewBox="24 8 252 180" aria-hidden="true">${drawing}</svg>${mark ? `<span class="hunt-mark" aria-hidden="true">${mark}</span>` : ''}</button><span class="habitat-caption">${huntHabitats[habitat].name}</span></div>`;
+  }).join('');
+  const crosshair = `<svg class="hunt-crosshair" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 19V5h14m24 0h14v14m0 22v14H42m-24 0H4V41" fill="none" stroke="#fff4a5" stroke-width="2.5" stroke-linecap="round"/><circle cx="30" cy="30" r="13" fill="none" stroke="#fff4a5" stroke-width="1.5"/><circle cx="30" cy="30" r="2" fill="#fff4a5"/></svg>`;
+  const clue = current ? `<p><strong>尋找${current.name}</strong> · 牠住在${current.habitat.replace('（家養）','')}。</p><p>移動瞄準器，點按解鎖了的剪影。</p>` : `<p><strong>三種動物都找到了！</strong> 請把你的寫作成果展示給老師。</p><button class="button lime" data-action="hunt-finish">面向老師 ${icon('arrow',17)}</button>`;
+  app.innerHTML = `<div class="wrap screen tone-${stage}"><div class="round flex justify-between items-center"><span class="eyebrow">${level.order} · ${level.name}</span><button class="button ghost" data-action="home">${icon('home',16)} 返回選關</button></div><section class="hunt-shell" aria-labelledby="hunt-title"><div class="hunt-head"><div><span class="eyebrow">野外圖鑑 · ${sky.name}</span><h1 id="hunt-title" class="screen-title" data-heading tabindex="-1">魔法相機尋影</h1></div><span class="hunt-count">已完成 ${roundIndex} / ${rounds.length}</span></div><div class="hunt-board" aria-label="動物棲息地和剪影">${scenery}${crosshair}</div><div class="hunt-footer">${clue}</div></section></div>`;
+  const board = app.querySelector('.hunt-board');
+  let touchStart = null;
+  const aim = (left,top) => {
+    const bounds = board.getBoundingClientRect();
+    board.style.setProperty('--aim-x',`${left-bounds.left}px`);
+    board.style.setProperty('--aim-y',`${top-bounds.top}px`);
+    board.dataset.aiming = '';
+  };
+  const hideAim = () => { delete board.dataset.aiming; };
+  board.addEventListener('pointermove',event=>aim(event.clientX,event.clientY));
+  board.addEventListener('pointerdown',event=>{
+    aim(event.clientX,event.clientY);
+    if (event.isPrimary && event.pointerType !== 'mouse') touchStart = {id:event.pointerId,x:event.clientX,y:event.clientY};
+  });
+  board.addEventListener('pointerup',event=>{
+    if (event.pointerId !== touchStart?.id) return;
+    const moved = Math.hypot(event.clientX-touchStart.x,event.clientY-touchStart.y)>8;
+    touchStart = null;
+    if (!moved) return;
+    const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('.hunt-target:not(:disabled)');
+    if (target && board.contains(target)) captureAnimal(Number(target.dataset.index));
+  });
+  board.addEventListener('pointerleave',hideAim);
+  board.addEventListener('pointercancel',()=>{ touchStart = null; hideAim(); });
+  board.addEventListener('focusin',event=>{
+    const target = event.target.getBoundingClientRect();
+    aim(target.left+target.width/2,target.top+target.height/2);
+  });
+  board.addEventListener('focusout',hideAim);
+}
+function captureAnimal(index) {
+  if (view !== 'hunt' || !currentRun.rounds[index] || index !== currentRun.roundIndex) return;
+  chime();
+  go('game');
 }
 const cameraModes = {near:'近鏡 · 看清細節',far:'遠鏡 · 看整體輪廓',wide:'全景 · 看清整體',still:'定格 · 靜態觀察',moving:'動態 · 觀察變化'};
-const fallbackFocus = {hedgehog:[43,51],peacock:[42,35],squirrel:[33,38],giraffe:[59,35],elephant:[72,65],zebra:[49,50],panda:[65,42],lion:[66,45],snail:[44,53],koala:[42,35],butterfly:[61,44],camel:[45,44],ostrich:[49,56],bat:[36,54]};
+const fallbackFocus = {hedgehog:[43,51],peacock:[42,35],squirrel:[33,38],giraffe:[59,35],elephant:[72,65],zebra:[49,50],panda:[65,42],lion:[66,45],snail:[44,53],koala:[42,35],butterfly:[61,44],camel:[45,44],ostrich:[49,56],bat:[36,54],octopus:[58,79],turtle:[44,49]};
 function renderGame() {
   const {stage,roundIndex} = currentRun;
   const round = currentRun.rounds[roundIndex];
@@ -401,28 +648,29 @@ function updateFactory() {
   document.getElementById('sentence').innerHTML = parts.length ? parts.map(fragment=>`<span class="fragment">${escapeText(fragment)}</span>`).join('') : '<span class="placeholder">選對一項，這裏就會加上一塊句子。</span>';
 }
 function renderChoices(focusIndex = null) {
-  const {roundIndex,step,answered} = currentRun;
-  const question = currentRun.rounds[roundIndex].tasks[step];
+  const {roundIndex,step,answered,difficulty} = currentRun;
+  const {animal,tasks} = currentRun.rounds[roundIndex];
+  const question = tasks[step];
   const total = question.options.length;
   const allOpen = question.revealed.size === total;
-  document.getElementById('reveal-status').innerHTML = `<span>${allOpen ? answered ? '已比較全部選項。' : '全部翻開了，請選最合適的一句。' : '先讀題，再逐一翻開選項。'}</span><span class="reveal-count">已翻開 ${question.revealed.size} / ${total}</span>`;
+  document.getElementById('reveal-status').innerHTML = `<span>${allOpen ? answered ? '已比較全部選項。' : '全部翻開了，請選最合適的一項。' : '先讀題，再逐一翻開選項。'}</span><span class="reveal-count">已翻開 ${question.revealed.size} / ${total}</span>`;
   const options = document.getElementById('options');
   options.innerHTML = question.options.map((option,index)=> {
     const letter = 'ABC'[index];
     const badge = `<span class="option-letter" aria-hidden="true">${letter}</span>`;
     if (!question.revealed.has(index)) return `<button data-action="reveal" data-index="${index}" class="option covered">${badge}<span>翻開選項 ${letter}</span>${icon('book',17)}</button>`;
-    return `<button data-action="answer" data-index="${index}" class="option ${answered && !option.reason ? 'selected' : ''} ${focusIndex === index ? 'reveal-flip' : ''}" ${answered ? 'disabled' : !allOpen ? 'aria-disabled="true"' : ''}>${badge}<span class="sr-only">選項 ${letter}：</span><span class="choice-text">${escapeText(option.text)}</span><span class="option-icon" aria-hidden="true">${option.emoji}</span></button>`;
+    return `<button data-action="answer" data-index="${index}" class="option ${answered && !option.reason ? 'selected' : ''} ${focusIndex === index ? 'reveal-flip' : ''}" ${answered ? 'disabled' : !allOpen ? 'aria-disabled="true"' : ''}>${badge}<span class="sr-only">選項 ${letter}：</span><span class="choice-text">${escapeText(option.text)}</span>${difficulty === 'guided' || option.picture === 'chisel' ? learningPicture(option.picture,animal) : ''}</button>`;
   }).join('');
   if (focusIndex !== null) options.querySelector(`[data-index="${focusIndex}"]`)?.focus({preventScroll:true});
 }
 function updateQuestion(moveFocus = false) {
-  const {stage,roundIndex,step,answered} = currentRun;
+  const {stage,roundIndex,step,answered,difficulty} = currentRun;
   const round = currentRun.rounds[roundIndex];
   const question = round.tasks[step];
   const route = routeFor(stage,round);
   const mode = route.name ? ` · ${route.name}` : '';
-  const nextLabel = step < 2 ? '下一步' : roundIndex < 2 ? '觀察下一種動物' : '完成本關，面向老師';
-  document.getElementById('question').innerHTML = `<span class="eyebrow">第 ${step+1} 步 · ${route.steps[step]}${mode}</span><h3 tabindex="-1" id="question-heading">${question.prompt}</h3><p class="reveal-status" id="reveal-status" role="status"></p><div class="options" id="options" role="group" aria-labelledby="question-heading"></div><p class="feedback${answered ? ' ok' : ''}" id="feedback" role="status">${answered ? '答對了！句子工廠加上了這一塊。' : ''}</p><div class="next-row flex"><button class="button primary" data-action="next" ${answered ? '' : 'hidden'}>${nextLabel} ${icon('arrow',17)}</button></div>`;
+  const nextLabel = step < 2 ? '下一步' : roundIndex < 2 ? '返回野外，尋找下一種動物' : '返回野外，查看拍攝成果';
+  document.getElementById('question').innerHTML = `<span class="eyebrow">第 ${step+1} 步 · ${route.steps[step]}${mode} · ${difficulties[difficulty].label}</span>${question.link ? `<p class="question-link">${escapeText(question.link)}</p>` : ''}<h3 tabindex="-1" id="question-heading">${escapeText(question.prompt)}</h3><p class="reveal-status" id="reveal-status" role="status"></p><div class="options" id="options" role="group" aria-labelledby="question-heading"></div><p class="feedback${answered ? ' ok' : ''}" id="feedback" role="status">${answered ? '答對了！句子工廠加上了這一塊。' : ''}</p><div class="next-row flex"><button class="button primary" data-action="next" ${answered ? '' : 'hidden'}>${nextLabel} ${icon('arrow',17)}</button></div>`;
   renderChoices();
   document.getElementById('camera-hint').textContent = `🔎 ${question.hint}`;
   updateFactory();
@@ -452,7 +700,7 @@ function answer(index,button) {
     return;
   }
   currentRun.answered = true;
-  round.parts.push(option.text);
+  round.parts.push(option.fragment);
   button.classList.add('selected');
   document.querySelectorAll('.option').forEach(entry=>entry.disabled = true);
   feedback.classList.add('ok');
@@ -466,12 +714,11 @@ function answer(index,button) {
 }
 function advance() {
   if (view !== 'game' || !currentRun.answered) return;
-  if (currentRun.step === 2 && currentRun.roundIndex === 2) { go('pause'); return; }
   currentRun.answered = false;
   if (currentRun.step === 2) {
     currentRun.step = 0;
     currentRun.roundIndex++;
-    go('game');
+    go('hunt');
   } else {
     currentRun.step++;
     app.querySelector('.camera-view')?.classList.remove('opening');
@@ -498,7 +745,7 @@ function updateSummary(focusSelector) {
   document.getElementById('summary-status').textContent = summary.status;
   checking.hidden = summary.passed;
   next.hidden = !summary.passed;
-  next.innerHTML = `${demoBackup ? '離開示範' : stage === 2 ? (currentRun.replay ? '查看小大師證書' : '領取小大師證書') : currentRun.replay ? '返回選關' : `進入${stages[stage+1].order}`} ${icon('arrow',17)}`;
+  next.innerHTML = `${stage === 1 ? '查看課堂重溫表' : demoBackup ? '離開示範' : stage === 2 ? (currentRun.replay ? '查看小大師證書' : '領取小大師證書') : currentRun.replay ? '返回選關' : `進入${stages[stage+1].order}`} ${icon('arrow',17)}`;
   app.querySelector('.summary [data-action="home"]')?.toggleAttribute('hidden',summary.passed && currentRun.replay && stage < 2);
   if (focusSelector) app.querySelector(focusSelector)?.focus({preventScroll:true});
 }
@@ -523,14 +770,36 @@ function checkSummary() {
     summary.status = '三個空格都填對了！你掌握了本關的寫作秘訣。';
     if (!demoBackup) {
       player.finished = Math.max(player.finished,stage);
-      player.unlocked = Math.min(2,Math.max(player.unlocked,stage+1));
-      player.notesByStage[stage] = currentRun.rounds.map(round=>({name:round.animal.name,text:round.parts.join('')}));
+      if (stage === 0) player.unlocked = Math.max(player.unlocked,1);
+      currentRun.notes = notesFor(currentRun);
+      player.notesByStage[stage] = currentRun.notes;
     }
     chime();
   } else {
     summary.status = summary.slots.includes(null) ? '還有空格沒填好。看看紅色的空格，再試一次。' : '綠色的空格答對了。點紅色空格取回詞卡，再試一次。';
   }
   updateSummary(`[data-action="${summary.passed ? 'finish-summary' : 'check-summary'}"]`);
+}
+const notesFor = run => run.rounds.filter(round=>round.parts.length === round.tasks.length).map(({animal,parts})=>({name:animal.name,parts:[...parts],text:parts.join('')}));
+function renderReview() {
+  const firstRun = player.runs[currentRun.difficulty][0];
+  const groups = [demoBackup ? [] : firstRun?.notes || player.notesByStage[0] || [], currentRun.notes || notesFor(currentRun)];
+  const count = groups.flat().length;
+  const tables = groups.map((entries,index)=>{
+    const level = stages[index];
+    const rows = entries.map(({name,parts})=>`<tr><th scope="row">${escapeText(name)}</th><td><ol class="review-steps" role="list">${parts.map((fragment,step)=>`<li class="review-step"><span class="review-step-label"><b>${step+1}</b> ${level.steps[step]}</span><span class="review-step-text">${escapeText(fragment)}</span></li>`).join('')}</ol></td></tr>`).join('');
+    return `<section class="surface review-sheet tone-${index}"><table class="review-table"><caption>${level.order} · ${level.tag}</caption><colgroup><col><col></colgroup><thead><tr><th scope="col">動物</th><th scope="col">魔法句子</th></tr></thead><tbody><tr><td colspan="2" class="review-route"><strong>段落鋪排</strong>${writingRoute(level.steps)}</td></tr>${rows || '<tr><td colspan="2">這一關還沒有完成的魔法句子。</td></tr>'}</tbody></table></section>`;
+  }).join('');
+  const next = demoBackup ? '離開示範' : currentRun.replay ? '返回選關' : '進入第三關';
+  app.innerHTML = `<div class="wrap screen tone-1"><div class="round flex justify-between items-center"><span class="eyebrow">第二關 · 寫作秘訣小總結</span><button class="button ghost" data-action="home">${icon('home',16)} 返回選關</button></div><h1 class="screen-title review-title" data-heading tabindex="-1">課堂重溫：${count === 6 ? '六個魔法句子' : '魔法句子'}</h1><p class="review-intro">按 1、2、3 的順序讀一讀。每種顏色和標籤，都對應一個寫作步驟。</p>${tables}<div class="flex flex-wrap items-center gap-2"><button class="button primary" data-action="finish-review">${next} ${icon('arrow',17)}</button><p class="review-status">和老師一起重溫後，再繼續。</p></div></div>`;
+}
+function finishReview() {
+  if (view !== 'review') return;
+  if (demoBackup) { exitDemo(); return; }
+  currentRun.reviewed = true;
+  player.unlocked = 2;
+  if (currentRun.replay) go('home');
+  else start(2);
 }
 function endDrag() {
   if (!currentDrag) return;
@@ -608,7 +877,7 @@ function filterAtlas(stage) {
   atlas.querySelector('.catalog-content').scrollTop = 0;
 }
 function openTeacher() {
-  teacher.innerHTML = `${modalHead('teacher','👩‍🏫 教師控制台')}<div class="drawer-content"><p class="note">免密碼示範工具：可直接進入指定畫面，不影響學生已完成的進度。</p>${stages.map((stage,index)=>`<section class="drawer-row tone-${index}"><h3>${stage.order} · ${stage.name}</h3><div class="flex flex-wrap gap-2">${[['station','情境思考站'],['game','答題畫面'],['pause','面向老師'],['summary','拖拉小總結']].map(([screen,label])=>`<button class="button ghost" data-action="jump" data-stage="${index}" data-view="${screen}">${label}</button>`).join('')}</div></section>`).join('')}</div>`;
+  teacher.innerHTML = `${modalHead('teacher','👩‍🏫 教師控制台')}<div class="drawer-content"><p class="note">免密碼示範工具：可直接進入指定畫面，不影響學生已完成的進度。</p>${stages.map((stage,index)=>`<section class="drawer-row tone-${index}"><h3>${stage.order} · ${stage.name}</h3><div class="flex flex-wrap gap-2">${[['station','情境思考站'],['hunt','魔法相機尋影'],['game','答題畫面'],['pause','面向老師'],['summary','拖拉小總結']].map(([screen,label])=>`<button class="button ghost" data-action="jump" data-stage="${index}" data-view="${screen}">${label}</button>`).join('')}</div></section>`).join('')}</div>`;
   teacher.showModal();
 }
 function jump(stage,screen) {
@@ -638,8 +907,15 @@ document.addEventListener('click',event=>{
   if ((action === 'word' || action === 'slot') && event.detail > 0 && performance.now() < clickSuppressedUntil) return;
   switch (action) {
     case 'home': if (demoBackup) exitDemo(); else go('home'); break;
+    case 'difficulty':
+      player.difficulty = button.dataset.mode;
+      renderHome();
+      app.querySelector('[data-action="difficulty"][aria-pressed="true"]').focus({preventScroll:true});
+      break;
     case 'start': start(Number(stage)); break;
-    case 'begin': go('game'); break;
+    case 'begin': go('hunt'); break;
+    case 'capture': captureAnimal(Number(index)); break;
+    case 'hunt-finish': if (view === 'hunt' && currentRun.roundIndex === currentRun.rounds.length) go('pause'); break;
     case 'reveal': reveal(Number(index)); break;
     case 'answer': answer(Number(index),button); break;
     case 'next': advance(); break;
@@ -656,11 +932,13 @@ document.addEventListener('click',event=>{
     case 'check-summary': checkSummary(); break;
     case 'finish-summary':
       if (!currentRun.summary.passed) break;
-      if (demoBackup) exitDemo();
+      if (currentRun.stage === 1) go('review');
+      else if (demoBackup) exitDemo();
       else if (currentRun.stage === 2) go('certificate');
       else if (currentRun.replay) go('home');
       else start(currentRun.stage+1);
       break;
+    case 'finish-review': finishReview(); break;
     case 'certificate': if (player.finished === 2) go('certificate'); break;
     case 'copy': copyNotes(); break;
     case 'atlas': openAtlas(); break;
